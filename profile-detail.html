@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <title>Sakchha</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg cstm-navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/images/sakchha-logo.png" class="img-fluid" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex ms-auto search-form" role="search">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./buyer-profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./buyers-feed.html">Feed</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sign in
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <section class="profile-banner-wrapper sec-pad"></section> -->
+    <section class="overview-section multi-step-card">
+        <div class="container-fluid">
+            <div class="row justify-content-center gx-0">
+                <div class="col-md-3">
+                    <div class="card profile-card">
+                        <div class="user-image">
+                            <img src="./assets/images/blank-avatar.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="profile-progress-wrapper">
+                                <i class="fa-solid fa-user-pen me-3"></i>
+                                <div class="review-wrapper">
+                                    <h5 class="mb-0">John Doe</h5>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <small class="text-muted">0 Review</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-warning">Buyer</button>
+                            <div>
+                                <table class="table table-bordered text-primary">
+                                    <tr>
+                                        <td>
+                                            Requested Lead: <span class="badge bg-secondary value">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Lead Inprogress: <span class="badge bg-secondary value">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Invited Leads: <span class="badge bg-secondary value">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Completed Leads: <span class="badge bg-secondary value">0</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="card overview-field">
+                        <div class="card-body">
+                            <h4 class="main-title">Complete Your Profile</h4>
+                            <form id="msform">
+                                <!-- progressbar -->
+                                <ul id="progressbar">
+                                    <li class="active" id="account">Account Information</li>
+                                    <li id="personal">Skills</li>
+                                    <li id="payment">Personal Information</li>
+                                    <li id="confirm">Success</li>
+                                </ul>
+                                <fieldset>
+                                    <div class="profile-form">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h5 class="fs-title">Account Information:</h5>
+                                            </div>
+                                            <div class="col-5">
+                                                <h5 class="steps">Step 1 - 4</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="mb-4">
+                                                    <h6 class="mb-3">
+                                                        Procced as
+                                                    </h6>
+                                                    <div class="job-list-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <div class="job-item">
+                                                                    <div class="job-img">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <img src="./assets/images/HR.png" alt="" class="img-fluid">
+                                                                    </div>
+                                                                    <p>Buyer (Hire)</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <div class="job-item">
+                                                                    <div class="job-img">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <img src="./assets/images/provider.png" alt="" class="img-fluid">
+                                                                    </div>
+                                                                    <p>Provider (Work)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <h6 class="mb-3">
+                                                        User Type
+                                                    </h6>
+                                                    <div class="job-list-wrapper">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <div class="job-item">
+                                                                    <div class="job-img">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <img src="./assets/images/individual.png" alt="" class="img-fluid">
+                                                                    </div>
+                                                                    <p>Individual</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <div class="job-item">
+                                                                    <div class="job-img">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                        <img src="./assets/images/organization.png" alt="" class="img-fluid">
+                                                                    </div>
+                                                                    <p>Organization</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-md-3 col-form-label">Name</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" readonly class="form-control-plaintext" value="Neoteric Nepal Pvt. Ltd.">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-md-3 col-form-label">Phone Number</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" readonly class="form-control-plaintext" value="9801265444">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label class="col-md-3 col-form-label">Email</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" readonly class="form-control-plaintext" value="mail@neoteric.com.np">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <input type="button" name="next" class="btn btn-warning next action-button" value="Next" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="profile-form">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h5 class="fs-title animate__animated animate__fadeInUp">Skills:</h5>
+                                            </div>
+                                            <div class="col-5">
+                                                <h5 class="steps animate__animated animate__fadeInUp">Step 2 - 4</h5>
+                                            </div>
+                                        </div>
+                                        <div class="job-list-wrapper">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/graphic-design.png" class="img-fluid">
+                                                            </div>
+                                                            <p>Graphic Design</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/touch.png" class="img-fluid">
+                                                            </div>
+                                                            <p>Content Creator</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/pharmaceuticals.png" class="img-fluid">
+                                                            </div>
+                                                            <p>Health Assistant</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/social-media.png" class="img-fluid">
+                                                            </div>
+                                                            <p>Social Media Manager</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/employees.png" class="img-fluid">
+                                                            </div>
+                                                            <p>HR Manager</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/box.png" class="img-fluid">
+                                                            </div>
+                                                            <p>Delivery Guy</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/car.png" class="img-fluid">
+                                                            </div>
+                                                            <p>Driver</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/money.png" class="img-fluid">
+                                                            </div>
+                                                            <p>Cashier</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="job-list-inner">
+                                                        <div class="job-item">
+                                                            <div class="job-img">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                <img src="./assets/images/coding.png" class="img-fluid">
+                                                            </div>
+                                                            <p>PHP Developer</p>
+                                                        </div>
+                                                        <ul class="skill-level-wrapper">
+                                                            <li class="skill-level">Intermediate</li>
+                                                            <li class="skill-level">Mid Level</li>
+                                                            <li class="skill-level">Expert</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="button" name="next" class="btn btn-warning next action-button" value="Next" /> <input type="button" name="previous" class="btn btn-warning previous action-button-previous" value="Previous" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="profile-form">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h5 class="fs-title animate__animated animate__fadeInUp">Personal Information:</h5>
+                                            </div>
+                                            <div class="col-5">
+                                                <h5 class="steps animate__animated animate__fadeInUp">Step 1 - 4</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control" id="floatingJob" placeholder="Job Title">
+                                                    <label for="floatingJob">Job Title</label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <textarea class="form-control" id="floatingBio" rows="3" placeholder="Bio" style="min-height: 100px;"></textarea>
+                                                    <label for="floatingBio">Bio</label>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="date" class="form-control" id="floatingBirth" placeholder="Date Of Birth">
+                                                            <label for="floatingBirth">Date Of Birth</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingAddress" placeholder="Address">
+                                                            <label for="floatingAddress">Address</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="City" placeholder="City">
+                                                            <label for="floatingCity">City</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingState" placeholder="State">
+                                                            <label for="floatingState">State</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingZip" placeholder="Zip">
+                                                            <label for="floatingZip">Zip</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingCountry" placeholder="Country">
+                                                            <label for="floatingCountry">Country</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <input type="text" class="form-control" id="floatingZip" placeholder="Pay Rate">
+                                                            <label for="floatingZip">Pay Rate</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <select class="form-select form-control" aria-label="Default select example">
+                                                                <option selected>Hourly</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                              </select>
+                                                            <label for="floatingCountry">Pay Type</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <select class="form-select form-control" aria-label="Default select example">
+                                                                <option selected>Full Time</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                              </select>
+                                                            <label for="floatingCountry">Engagement Type</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-floating mb-3">
+                                                            <select class="form-select form-control" aria-label="Default select example">
+                                                                <option selected>NRs</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                              </select>
+                                                            <label for="floatingCountry">Pay Currecy Type</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <input type="button" name="next" class="btn btn-warning next action-button" value="Next" /> <input type="button" name="previous" class="btn btn-warning previous action-button-previous" value="Previous" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h5 class="fs-title">Finish</h5>
+                                            </div>
+                                            <div class="col-5">
+                                                <h5 class="steps">Step 4 - 4</h5>
+                                            </div>
+                                        </div> <br><br>
+                                        <h2 class="text-center">SUCCESS !</h2> <br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-3"> <img src="./assets/images/GwStPmg.png" class="fit-image"> </div>
+                                        </div> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 text-center">
+                                                <h5 class="text-center">You Have Successfully Signed Up</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/costum.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var current_fs, next_fs, previous_fs; //fieldsets
+            var opacity;
+            var current = 1;
+            var steps = $("fieldset").length;
+
+            setProgressBar(current);
+
+            $(".next").click(function() {
+
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+                //Add Class Active
+                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                //show the next fieldset
+                next_fs.show();
+                //hide the current fieldset with style
+                current_fs.animate({
+                    opacity: 0
+                }, {
+                    step: function(now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({
+                            'opacity': opacity
+                        });
+                    },
+                    duration: 500
+                });
+                setProgressBar(++current);
+            });
+
+            $(".previous").click(function() {
+
+                current_fs = $(this).parent();
+                previous_fs = $(this).parent().prev();
+
+                //Remove class active
+                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                //show the previous fieldset
+                previous_fs.show();
+
+                //hide the current fieldset with style
+                current_fs.animate({
+                    opacity: 0
+                }, {
+                    step: function(now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        previous_fs.css({
+                            'opacity': opacity
+                        });
+                    },
+                    duration: 500
+                });
+                setProgressBar(--current);
+            });
+
+            function setProgressBar(curStep) {
+                var percent = parseFloat(100 / steps) * curStep;
+                percent = percent.toFixed();
+                $(".progress-bar")
+                    .css("width", percent + "%")
+            }
+
+            $(".submit").click(function() {
+                return false;
+            })
+
+        });
+    </script>
+</body>
+
+</html>

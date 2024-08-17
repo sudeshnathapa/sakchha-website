@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Sakchha</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg cstm-navbar">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand logo-colored" href="#"><img src="./assets/images/logo-colored.png" class="img-fluid" alt=""></a>
+            <a class="navbar-brand logo-white" href="#"><img src="./assets/images/logo-colored.png" class="img-fluid" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex ms-auto search-form" role="search">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sign in
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="banner-wrapper sec-pad">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/images/frame-16.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <div class="top-section-container">
+                            <h1 class="text-center animate__animated animate__fadeInUp d-none d-md-block">Pool Of <span class="text-warning">Top Talents</span> In One Place</h1>
+                            <!-- <div class="icons-container animate__animated animate__fadeInUp">
+                                <div class="row justify-content-center">
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/map-white.png" class="img-fluid" alt="...">
+                                            <h5>43 <br><span>Cities</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/worldwide-white.png" class="img-fluid" alt="...">
+                                            <h5>430 <br><span>Companies</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/work-team-white.png" class="img-fluid" alt="...">
+                                            <h5>80,000 <br><span>Active Employees</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="hire-card-container animate__animated animate__fadeInUp">
+                            <div class="row gx-0 justify-content-center">
+                                <div class="col-md-5">
+                                    <div class="card card1">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title text-center">Hire a talent</h4>
+                                            <a href="#" class="btn btn-warning btn2 my-2">Register as Buyer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card card2">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title   text-center">Search for your dream job</h4>
+                                            <a href="#" class="btn btn-warning btn2 my-2">Register as Provider</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="./assets/images/frame-18.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <div class="top-section-container">
+                            <h1 class="text-center animate__animated animate__fadeInUp d-none d-md-block">Pool Of <span class="text-warning">Top Talents</span> In One Place</h1>
+                            <!-- <div class="icons-container animate__animated animate__fadeInUp">
+                                <div class="row justify-content-center">
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/map-white.png" class="img-fluid" alt="...">
+                                            <h5>43 <br><span>Cities</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/worldwide-white.png" class="img-fluid" alt="...">
+                                            <h5>430 <br><span>Companies</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/work-team-white.png" class="img-fluid" alt="...">
+                                            <h5>80,000 <br><span>Active Employees</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="hire-card-container animate__animated animate__fadeInUp">
+                            <div class="row gx-0 justify-content-center">
+                                <div class="col-md-5">
+                                    <div class="card card1">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title text-center">Hire a talent</h4>
+                                            <a href="#" class="btn btn-warning btn2 my-2">Register as Buyer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card card2">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title   text-center">Search for your dream job</h4>
+                                            <a href="#" class="btn btn-warning btn2 my-2">Register as Provider</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="./assets/images/frame-19.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <div class="top-section-container">
+                            <h1 class="text-center animate__animated animate__fadeInUp d-none d-md-block">Pool Of <span class="text-warning">Top Talents</span> In One Place</h1>
+                            <!-- <div class="icons-container animate__animated animate__fadeInUp">
+                                <div class="row justify-content-center">
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/map-white.png" class="img-fluid" alt="...">
+                                            <h5>43 <br><span>Cities</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/worldwide-white.png" class="img-fluid" alt="...">
+                                            <h5>430 <br><span>Companies</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="icons">
+                                            <img src="./assets/images/icons/work-team-white.png" class="img-fluid" alt="...">
+                                            <h5>80,000 <br><span>Active Employees</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="hire-card-container animate__animated animate__fadeInUp">
+                            <div class="row gx-0 justify-content-center">
+                                <div class="col-md-5">
+                                    <div class="card card1">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title text-center">Hire a talent</h4>
+                                            <a href="#" class="btn btn-warning btn2 my-2">Register as Buyer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card card2">
+                                        <div class="card-body text-center">
+                                            <h4 class="card-title   text-center">Search for your dream job</h4>
+                                            <a href="#" class="btn btn-warning btn2 my-2">Register as Provider</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="amazing-team-wrapper">
+        <!-- <h4 class="main-title">Start building amazing teams</h4> -->
+        <div class="start-building-icons">
+            <div class="row">
+
+                <div class="col-md-3 p-0">
+                    <div class="card amazing-team-card">
+                        <div class="card-body">
+                            <i class="fa-regular fa-clock fonts"></i>
+                            <p>Flexible working <br>hour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="card amazing-team-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-user-group fonts"></i>
+                            <p>Right talent in <br>right role</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="card amazing-team-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-filter"></i>
+                            <p>Filtered and <br>selected</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="card amazing-team-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-headphones fonts"></i>
+                            <p>24/7 <br>support</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="about-section about-fullwidth sec-pad">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center">
+                    <h6 class="pre-title">Endless pool of potential talents</h6>
+                    <h3 class="main-title">Start Building Amazing Teams</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="row d-sm-flex text-wrapper align-items-stretch">
+                <div class="one-half about-bg mb-md-0 mb-4 img d-flex align-self-stretch">
+                    <img src="./assets/images/frame-3-2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="one-half half-text d-flex justify-content-end align-items-center">
+                    <div class="text-inner px-md-4">
+                        <div class="row d-flex">
+                            <div class="col-md-12 pb-3">
+                                <h5 class="mb-3">We are on a mission to create opportunities in Nepal and help <br> boost the economy towards better lives</h5>
+                                <p>Save yourself from trial and error of finding the best talent. We will present you with profiles of the best talents who match your requirement . We have handpicked a number of endless service providers and freelancers
+                                    with more than a decade of experiment in various fields.
+                                </p>
+                            </div>
+                            <div class="col-md-12 d-flex align-self-stretch">
+                                <div class="media block-6 services-wrap d-flex">
+                                    <div class="icon d-flex justify-content-center align-items-center"><i class="fa-regular fa-clock fonts"></i></div>
+                                    <div class="media-body pl-4">
+                                        <h6>We match your needs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-self-stretch">
+                                <div class="media block-6 services-wrap d-flex">
+                                    <div class="icon d-flex justify-content-center align-items-center"><i class="fa-solid fa-headphones fonts"></i></div>
+                                    <div class="media-body pl-4">
+                                        <h6>Reputation & Relationships</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-self-stretch">
+                                <div class="media block-6 services-wrap d-flex">
+                                    <div class="icon d-flex justify-content-center align-items-center"><i class="fa-regular fa-clock fonts"></i></div>
+                                    <div class="media-body pl-4">
+                                        <h6>Technical Competencies</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 d-flex align-self-stretch">
+                                <div class="media block-6 services-wrap d-flex">
+                                    <div class="icon d-flex justify-content-center align-items-center"><i class="fa-solid fa-headphones fonts"></i></div>
+                                    <div class="media-body pl-4">
+                                        <h6>Lorem Ipsum Lorem</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-section sec-pad">
+        <div class="container">
+            <div class="card blog-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="blog-img">
+                            <img src="./assets/images/interview-1.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="blog-section-content">
+                            <a href="#">
+                                <h1 class="mb-2">Boost Your Resume</h1>
+                                <h4 class="mb-3">How to Attract Recruiter in 2023 : Get Hired!</h4>
+                                <p>How to Attract Recruiter in 2023 : Get Hired! Your resume is your recommendation letter to the employer. Therefore making it as appealing as possible expands your horizon of being hired. A rich, updated and error proof
+                                    resume with relevant skills, quantifiable achievements...</p>
+                            </a><a href="#" class="btn btn-warning btn-lg">Read More</a>
+                            <div class="blog-author">
+                                <img src="./assets/images/icons/user.png" class="img-fluid">
+                                <div>
+                                    <p class="author-name">Sunita Chhetri</p>
+                                    <small>2 January, 2023 | 6 reads</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card blog-card">
+                        <div class="card-body">
+                            <div class="blog-img">
+                                <img src="./assets/images/interview-1.jpg" class="img-fluid">
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h5>Boost Your Resume</h5>
+                                    <p>How to Attract Recruiter in 2023 : Get Hired! Your resume is your recommendation letter to the employer. Therefore making it as appealing as possible expands your horizon of being hired. A rich, updated and error proof
+                                        resume with relevant skills, quantifiable achievements...</p>
+                                </a><a href="#" class="read-btn">Read More</a>
+                                <div class="blog-author">
+                                    <img src="./assets/images/icons/user.png" class="img-fluid">
+                                    <div>
+                                        <p class="author-name">Sunita Chhetri</p>
+                                        <small class="text-muted">2 January, 2023 | 6 reads</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- <section class="available-remote-jobs sec-pad">
+        <div class="container">
+            <h4 class="main-title">Available Remote Jobs</h4>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-baseline">
+                        <div class="col-md-10">
+                            <div class="d-flex">
+                                <button class="btn search-btn" type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                                <input class="form-control" type="search" placeholder="Jobs Titles, Skills or Keywords" aria-label="Search">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-warning btn-lg ">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-3">Trending Keywords: <span class="text-warning">Python, Hr, Bank</span></p>
+        </div>
+    </section> -->
+    <section class="skills-wrapper sec-pad">
+        <h5 class="pre-title">Skills</h5>
+        <h4 class="main-title">Available Skills</h4>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="skills-inner">
+                        <div class="skills-img">
+                            <img src="./assets/images/web-design1.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <h6>Graphic Designer</h6>
+                            <p class="text-muted"><small>(140 Jobs)</small></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="skills-inner">
+                        <div class="skills-img">
+                            <img src="./assets/images/customer-service.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <h6>Customer support</h6>
+                            <p class="text-muted"><small>(140 Jobs)</small></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="skills-inner">
+                        <div class="skills-img">
+                            <img src="./assets/images/devops1.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <h6>Web Development</h6>
+                            <p class="text-muted"><small>(140 Jobs)</small></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="skills-inner">
+                        <div class="skills-img">
+                            <img src="./assets/images/web-design1.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <h6>Graphic Designer</h6>
+                            <p class="text-muted"><small>(140 Jobs)</small></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="skills-inner">
+                        <div class="skills-img">
+                            <img src="./assets/images/web-design1.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <h6>Graphic Designer</h6>
+                            <p class="text-muted"><small>(140 Jobs)</small></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="skills-inner">
+                        <div class="skills-img">
+                            <img src="./assets/images/web-design1.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <h6>Graphic Designer</h6>
+                            <p class="text-muted"><small>(140 Jobs)</small></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="image-overlay-card-wrapper sec-pad">
+        <div class="container">
+            <div class="image-overlay-card-inner sec-pad">
+                <div class="image-overlay-card"></div>
+                <div class="image-overlay-card-content">
+                    <h4>For clients</h4>
+                    <h1>Find talent your way</h1>
+                    <h6>Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations.</h6>
+                    <div class="image-overlay-card-box">
+                        <div class="image-overlay-card-box-inner">
+                            <h4>Post a job and hire a pro</h4>
+                            <a href="#">
+                                <h6>Talent Market Place <i class="fa-solid fa-arrow-right-long"></i></h6>
+                            </a>
+                        </div>
+                        <div class="image-overlay-card-box-inner">
+                            <h4>Post a job and hire a pro</h4>
+                            <a href="#">
+                                <h6>Talent Market Place <i class="fa-solid fa-arrow-right-long"></i></h6>
+                            </a>
+                        </div>
+                        <div class="image-overlay-card-box-inner">
+                            <h4>Post a job and hire a pro</h4>
+                            <a href="#">
+                                <h6>Talent Market Place <i class="fa-solid fa-arrow-right-long"></i></h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="video-wrapper sec-pad">
+        <div class="container">
+            <h6 class="pre-title">Endless pool of potential talents</h6>
+            <h3 class="main-title">Start Building Amazing Teams</h3>
+            <div class="card">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="card-body">
+                            <h1 class="mb-4">Hire <span class="text-warning">Top Talents</span> From Nepal</h1>
+                            <p>Technology has enabled global access to top-notch talents. We’ve all become a part of a large pool of collaborators working to make a difference. Recruit competent, committed and creative personnel, teams and vendors from this
+                                pool of talent.</p>
+                            <p>If you are an individual from Nepal or anywhere in the world looking for an opportunity, join our network. Get to work with top companies from all around the world. </p>
+                            <button type="button" class="btn btn-warning btn-lg mt-3">Explore More</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="video-box">
+                            <iframe width="100%" height="436" src="https://www.youtube.com/embed/T4GxEf8r1I8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial-wrapper sec-pad">
+        <div class="container">
+            <div class="row">
+                <h5 class="pre-title">Testimonials</h5>
+                <h4 class="main-title">What Our Customers Say</h4>
+                <div class="owl-carousel owl-theme">
+                    <div class="item px-2 ">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate inventore enim molestiae fugit. Rem magnam veniam quo fugit enim, sapiente ipsa architecto earum voluptate dolorum aliquid odit consectetur consequuntur distinctio."</p>
+                        <div class="testimonial-client">
+                            <div class="textimonial-img">
+                                <img src="./assets/images/user1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div>
+                                <h5>Roger Scott</h5>
+                                <p class="text-muted"><small>CEO, Neosoftware Pvt. Ltd</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate inventore enim molestiae fugit. Rem magnam veniam quo fugit enim, sapiente ipsa architecto earum voluptate dolorum aliquid odit consectetur consequuntur distinctio."</p>
+                        <div class="testimonial-client">
+                            <div class="textimonial-img">
+                                <img src="./assets/images/user2.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div>
+                                <h5>Roger Scott</h5>
+                                <p class="text-muted"><small>CEO, Neosoftware Pvt. Ltd</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate inventore enim molestiae fugit. Rem magnam veniam quo fugit enim, sapiente ipsa architecto earum voluptate dolorum aliquid odit consectetur consequuntur distinctio."</p>
+                        <div class="testimonial-client">
+                            <div class="textimonial-img">
+                                <img src="./assets/images/user3.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div>
+                                <h5>Roger Scott</h5>
+                                <p class="text-muted"><small>CEO, Neosoftware Pvt. Ltd</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2 mx-4">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate inventore enim molestiae fugit. Rem magnam veniam quo fugit enim, sapiente ipsa architecto earum voluptate dolorum aliquid odit consectetur consequuntur distinctio."</p>
+                        <div class="testimonial-client">
+                            <div class="textimonial-img">
+                                <img src="./assets/images/user1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div>
+                                <h5>Roger Scott</h5>
+                                <p class="text-muted"><small>CEO, Neosoftware Pvt. Ltd</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate inventore enim molestiae fugit. Rem magnam veniam quo fugit enim, sapiente ipsa architecto earum voluptate dolorum aliquid odit consectetur consequuntur distinctio."</p>
+                        <div class="testimonial-client">
+                            <div class="textimonial-img">
+                                <img src="./assets/images/user2.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div>
+                                <h5>Roger Scott</h5>
+                                <p class="text-muted"><small>CEO, Neosoftware Pvt. Ltd</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate inventore enim molestiae fugit. Rem magnam veniam quo fugit enim, sapiente ipsa architecto earum voluptate dolorum aliquid odit consectetur consequuntur distinctio."</p>
+                        <div class="testimonial-client">
+                            <div class="textimonial-img">
+                                <img src="./assets/images/user3.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div>
+                                <h5>Roger Scott</h5>
+                                <p class="text-muted"><small>CEO, Neosoftware Pvt. Ltd</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div>
+                            <img src="./assets/images/sakchha-logo.png" alt="Sakchha logo" class="py-5 img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="py-5 ">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Client</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Client</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="py-5">
+                            <button class="btn btn-warning btn-lg">Join Our Team</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.1/jquery.textillate.js"></script>
+    <script src="./assets/js/costum.js"></script>
+</body>
+
+</html>

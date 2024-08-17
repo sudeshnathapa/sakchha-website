@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+    <title>Sakchha</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg cstm-navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./assets/images/sakchha-logo.png" class="img-fluid" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex ms-auto search-form" role="search">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./buyer-profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./buyers-feed.html">Feed</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sign in
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="profile-banner-wrapper sec-pad"></section>
+    <section class="overview-section sec-pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card profile-card">
+                        <div class="user-image">
+                            <img src="./assets/images/neoteric.jpg" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="profile-progress-wrapper">
+                                <i class="fa-solid fa-user-pen me-3"></i>
+                                <div>
+                                    <p class="mb-0">Profile Completeness: 58%</p>
+                                    <div class="progress profile-progress">
+                                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 58%" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="./profile-detail.html">
+                                    <h5 class="pre-title">Complete your profile</h5>
+                                </a>
+                                <p>Fill all the required information to apply job.</p>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td>
+                                            <i class="fa-regular fa-bookmark me-2"></i> Basic Information <i class="fa-solid fa-circle-exclamation ms-2"></i>
+                                        </td>
+                                        <td>
+                                            <i class="fa-regular fa-bookmark me-2"></i> Vacancies <i class="fa-sharp fa-regular fa-circle-xmark ms-2"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-regular fa-bookmark me-2"></i> Social account <i class="fa-solid fa-circle-exclamation ms-2"></i>
+                                        </td>
+                                        <td>
+                                            <i class="fa-regular fa-bookmark me-2"></i> Available Skills <i class="fa-solid fa-circle-exclamation ms-2"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa-regular fa-bookmark me-2"></i> Social account <i class="fa-sharp fa-regular fa-circle-xmark ms-2"></i>
+                                        </td>
+                                        <td>
+                                            <i class="fa-regular fa-bookmark me-2"></i> Available Skills <i class="fa-sharp fa-regular fa-circle-xmark ms-2"></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card overview-field">
+                        <div class="card-body">
+                            <h4 class="main-title">Company Overview</h4>
+                            <form>
+                                <div class="row mb-3">
+                                    <label class="col-md-3 col-form-label">Name</label>
+                                    <div class="col-md-9">
+                                        <input type="text" readonly class="form-control-plaintext" value="Neoteric Nepal Pvt. Ltd.">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-md-3 col-form-label">Address</label>
+                                    <div class="col-md-9">
+                                        <input type="text" readonly class="form-control-plaintext" value="Jhamsikhel, Lalitpur">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-md-3 col-form-label">Phone Number</label>
+                                    <div class="col-md-9">
+                                        <input type="text" readonly class="form-control-plaintext" value="9801265444">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-md-3 col-form-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" readonly class="form-control-plaintext" value="mail@neoteric.com.np">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="profile-about-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="main-title">About Us</h4>
+                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                                ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris
+                                in erat justo. Nullam ac urna eu felis dapibus. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. ciosqu ad
+                                litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/costum.js"></script>
+</body>
+
+</html>
